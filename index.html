@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#12372a" />
+    <title>METC - Madagascar Excellence Training Center</title>
+    <meta
+      name="description"
+      content="Formations en informatique certifiantes avec METC Madagascar."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container nav">
+        <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
+          <span class="brand-mark" aria-hidden="true">
+            <span>M</span>
+          </span>
+          <span class="brand-copy">
+            <strong>METC</strong>
+            <small>EXCELLENCE TRAINING</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a class="active" href="#accueil">Accueil</a>
+          <a href="#formations">Formations</a>
+          <a href="#apropos">À propos</a>
+        </nav>
+
+        <a class="nav-action" href="#formations">
+          Commencer
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil">
+        <div class="hero-orb hero-orb-one"></div>
+        <div class="hero-orb hero-orb-two"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              Apprendre. Pratiquer. Exceller.
+            </div>
+            <h1>Maîtrisez l'informatique avec <em>METC</em></h1>
+            <p class="hero-text">
+              Des formations pratiques, accessibles à tous, pour développer les compétences
+              numériques essentielles au monde professionnel.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#formations">
+                Explorer les formations
+                <span aria-hidden="true">→</span>
+              </a>
+              <a class="button button-ghost" href="#apropos">
+                <span class="play-mini" aria-hidden="true">▶</span>
+                Découvrir METC
+              </a>
+            </div>
+            <div class="trust-row" aria-label="Avantages METC">
+              <div class="trust-item">
+                <strong>100%</strong>
+                <span>Pratique</span>
+              </div>
+              <div class="trust-divider"></div>
+              <div class="trust-item">
+                <strong>À votre rythme</strong>
+                <span>Apprentissage flexible</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Aperçu de la plateforme METC">
+            <div class="visual-card">
+              <div class="visual-toolbar">
+                <div class="window-dots"><i></i><i></i><i></i></div>
+                <span>Mon apprentissage</span>
+                <div class="mini-avatar">A</div>
+              </div>
+              <div class="visual-body">
+                <aside class="visual-sidebar">
+                  <span class="side-logo">M</span>
+                  <span class="side-icon active">⌂</span>
+                  <span class="side-icon">▦</span>
+                  <span class="side-icon">◫</span>
+                  <span class="side-icon">⚙</span>
+                </aside>
+                <div class="visual-content">
+                  <div class="lesson-top">
+                    <div>
+                      <small>FORMATION EN COURS</small>
+                      <h3>Excel Avancé</h3>
+                    </div>
+                    <div class="progress-ring" style="--progress: 72">
+                      <span>72%</span>
+                    </div>
+                  </div>
+                  <div class="video-preview">
+                    <div class="video-grid"></div>
+                    <div class="excel-sheet">
+                      <span>A</span><span>B</span><span>C</span><span>D</span>
+                      <b></b><b></b><b></b><b></b>
+                      <b></b><b></b><b></b><b></b>
+                      <b></b><b></b><b></b><b></b>
+                    </div>
+                    <button class="video-play" type="button" aria-label="Lire la vidéo">
+                      ▶
+                    </button>
+                  </div>
+                  <div class="lesson-footer">
+                    <div class="lesson-label">
+                      <span class="lesson-icon">▤</span>
+                      <div><small>CHAPITRE 4</small><strong>Tableaux croisés dynamiques</strong></div>
+                    </div>
+                    <span class="lesson-time">24 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="floating-badge badge-top">
+              <span class="badge-icon">✓</span>
+              <div><strong>12</strong><small>Chapitres complétés</small></div>
+            </div>
+            <div class="floating-badge badge-bottom">
+              <div class="badge-avatars"><i>A</i><i>M</i><i>J</i></div>
+              <div><strong>+250</strong><small>Apprenants</small></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="formations" id="formations">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">NOS FORMATIONS</span>
+              <h2>Choisissez votre parcours</h2>
+            </div>
+            <p>Des compétences utiles pour étudier, travailler et entreprendre.</p>
+          </div>
+          <div class="formation-grid" id="formationGrid"></div>
+        </div>
+      </section>
+
+      <section class="about" id="apropos">
+        <div class="container about-grid">
+          <div class="about-label">
+            <span class="section-kicker">À PROPOS DE METC</span>
+            <h2>Le savoir pratique au service de votre avenir.</h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              Madagascar Excellence Training Center accompagne chacun dans la maîtrise
+              des outils numériques grâce à des cours structurés, progressifs et concrets.
+            </p>
+            <div class="about-stats">
+              <div><strong>7</strong><span>Formations</span></div>
+              <div><strong>250+</strong><span>Apprenants</span></div>
+              <div><strong>100%</strong><span>Pratique</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <a class="brand brand-footer" href="#accueil">
+          <span class="brand-mark"><span>M</span></span>
+          <span class="brand-copy"><strong>METC</strong><small>EXCELLENCE TRAINING</small></span>
+        </a>
+        <p>© 2026 METC. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <div class="course-overlay" id="courseOverlay" aria-hidden="true">
+      <aside class="course-panel" role="dialog" aria-modal="true" aria-labelledby="courseTitle">
+        <header class="course-header">
+          <button class="course-back" id="courseClose" type="button" aria-label="Fermer">
+            ← <span>Retour aux formations</span>
+          </button>
+          <span class="course-progress-label">Votre progression</span>
+        </header>
+        <div class="course-layout">
+          <aside class="chapter-sidebar">
+            <div class="chapter-course">
+              <div class="chapter-course-icon" id="courseIcon">E</div>
+              <div><small>FORMATION</small><h2 id="courseTitle">Excel Avancé</h2></div>
+            </div>
+            <div class="chapter-list" id="chapterList"></div>
+          </aside>
+          <section class="lesson-area">
+            <div class="lesson-heading">
+              <span id="chapterLabel">CHAPITRE 1</span>
+              <h2 id="lessonTitle">Premiers pas avec Excel</h2>
+            </div>
+            <div class="lesson-tabs" role="tablist">
+              <button class="tab active" type="button" data-tab="lesson">Leçon vidéo</button>
+              <button class="tab" type="button" data-tab="exercise">Exercices</button>
+              <button class="tab" type="button" data-tab="correction">Correction</button>
+              <button class="tab" type="button" data-tab="support">Supports</button>
+            </div>
+            <div class="lesson-content" id="lessonContent"></div>
+          </section>
+        </div>
+      </aside>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
